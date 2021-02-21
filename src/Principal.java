@@ -314,6 +314,7 @@ public class Principal {
 						 * adecuado.
 						 */
 						p1.producto_potencia(base, exponente) ;
+						 // muestro por pantalla el resultado /*
 						
 						System.out.println("RESULTADO = "+ p1.producto_potencia(base, exponente));
 					} catch (Exception e) {
