@@ -1,39 +1,41 @@
 package operaciones;
-/** La clase Producto contiene métodos para realizar operaciones numéricas básicas 
- * como las funciones:
+
+/** Se van a implementar cuatro maneras de multiplicar para realizar operaciones numéricas básicas 
+ * con las funciones:
+ * 
  * <p>-Producto de dos números reales.
  * <p>-Producto de dos números enteros.
  * <p>-Producto de tres números reales.
  * <p>-Potencia.
  *  
- * @author Jose Maria Tenreiro Eiranova 
- * @since 28/01/2021
+ * @author Angel Sanchez-Sierra Cruz
+ * @since 09/02/2021
  *
  */
 public class Producto {
 	/**
-	 * @param productoReales2 Será un valor REAL resultante que nos devolverá la 
-	 * función producto_Reales2()
+	 * @param producto_dos_reales Tendra un valor real, como resultado que nos devolverá la 
+	 * función producto_realesdos()
 	 */
-	double productoReales2;
+	double producto_dos_reales;
 	
-	/**@param productoEnteros Será un valor entero resultante que nos devolverá la 
-	 * función producto_Enteros()
+	/**@param producto_dos_enteros Tendra un valor entero, como resultado que nos devolverá la 
+	 * función producto_enterosdos()
 	 */
-	int productoEnteros;
+	int producto_dos_enteros;
 	
-	/**@param productoReales3 Será un valor real resultante que nos devolverá la 
-	 * función producto_Reales3()
+	/**@param producto_tres_reales Tendra un valor real, como resultado que nos devolverá la 
+	 * función producto_realestres()
 	 */
-	double productoReales3;
+	double producto_tres_reales;
 	
-	/**@param valorPotencia Será un valor real resultante que nos devolverá la 
-	 * funcion potencia_Numero()
+	/**@param valorPotencia Tendra un valor real, como resultado que nos devolverá la 
+	 * funcion producto_potencia()
 	 */
-	double potenciaNumero;
+	double producto_potencia;
 	
-	/**Este será el constructor por defecto de la clase Producto <p>
-	 * Inicializa un objeto Producto recién creado sin el paso de ningún parámetro.
+	/**Constructor por defecto de la clase Producto <p>
+	 * Inicia el objeto Producto recién creado sin el paso de ningún parámetro.
 	 * 
 	 */
 	public Producto(){
@@ -42,72 +44,67 @@ public class Producto {
 	
 	 /**
 
-     * Método que devuelve el resultado del producto de dos números reales <p>
-     	 NOTA:<p>Cuando un número es positivo y el otro es negativo, el producto es negativo.
-			<p>Cuando ambos números son negativos, el producto es positivo.
-			<p>Cuando ambos números son positivos, el producto es positivo.
-			<p>Si cualquiera de los dos numeros es cero, el producto es cero.
-			<p>Si el valor del resultado es mayor que el valor maximo del tipo de dato double(64 bits) se nos informará de un error.
+     * Multiplica dos números reales, tendrá dos parámetros de entrada y uno de salida que será la solución. <p>
+     *        NOTA:<p> valor n1 * n2
+     * 
      * @return Valor real que nos devuelve la función o método (producto)
-     * @param num1Real Primer numero real que será el multiplicando 
-     * @param num2Real Segundo numero real que será el multiplicador
-     * @throws Exception -Numero mayor de 64 bits en num1Real,num2Real o productoReales2
+     * @param n1Real Primer valor numerico entero que sera el multiplicando 
+     * @param n2Real Segundo valor numerico real que será el multiplicador
+     * @throws Exception -Numero mayor de 64 bits en n1Real,n2Real o producto_dos_reales
      * Introducir letras en vez de números
      * 
      *{@link Exception#getMessage()}
 
      */
-	public double producto_Reales2(double num1Real, double num2Real) throws Exception {
+	public double producto_dos_reales(double n1Real, double n2Real) throws Exception {
 		
-		return productoReales2;
-	}//Cierre función producto_Reales2
+		return producto_dos_reales;
+	}//Cierre función producto_dos_reales
 
 	/**
 
-     * Método que devuelve el resultado del producto de dos números enteros <p>
-     	 NOTA:<p>Cuando un número es positivo y el otro es negativo, el producto es negativo.
-			<p>Cuando ambos números son negativos, el producto es positivo.
-			<p>Cuando ambos números son positivos, el producto es positivo.
-			<p>Si cualquiera de los dos numeros es cero, el producto es cero.
-			<p>Si el valor del resultado es mayor que el valor maximo del tipo de dato int(32 bits) se nos informará de un error.
+     * Multiplica dos números enteros, tendrá dos parámetros de entrada y uno de salida que será la solución. <p>
+     * 
+     	          NOTA: valor n1 * n2<p>
+     	
      * @return Valor real que nos devuelve la función o método (producto)
-     * @param num1Real Primer numero entero que será el multiplicando 
-     * @param num2Real Segundo numero entero que será el multiplicador
-		@throws Exception -Numero mayor de 32 bits en num1Entero,num2Real o productoEnteros
+     * @param n1Real Primer numero entero que será el multiplicando 
+     * @param n2Real Segundo numero entero que será el multiplicador
+		@throws Exception -Numero mayor de 32 bits en n1Entero,n2Real o producto_dos_enteros
 		Introducir letras en vez de números. Introducir numero real en numero entero.
 		{@link Exception#getMessage()}
      */
-	public int producto_Enteros(int num1Entero, int num2Entero)throws Exception {
-		return productoEnteros;
-	}//Cierre funcion producto_Enteros
+	public int producto_dos_enteros(int n1Entero, int n2Entero)throws Exception {
+		
+		return producto_dos_enteros;
+	}//Cierre funcion producto_dos_enteros
 	
 	/**
 
-     * Método que devuelve el resultado del producto de tres números reales mediante una funcion asociativa <p>
-     	 NOTA:<p>Si hay un número impar de números negativos, el producto es negativo. 
-     	 	<p>Si hay un número par de números negativos, el producto es positivo
-			<p>Si cualquiera de los  numeros es cero, el producto es cero.
-			<p>Si el valor del resultado es mayor que el valor maximo del tipo de dato double(64 bits) se nos informará de un error.
+     *  Multiplica tres números reales, tendrá tres parámetros de entrada y uno de salida que será la solución. <p>
+     	 NOTA:<p>valor n1 * n2 * n3. 
+     	 	
      * @return Valor real que nos devuelve la función o método (producto)
-     * @param num1Real Primer numero real que será el multiplicando en la primera operación que hace la función
-     * @param num2Real Segundo numero real que será el multiplicador en la primera operacion que hace la función
-     * @param num3Real Tercer numero real  que sera el multiplicador del resultado del producto entre num1Real y num2Real
+     * @param n1Real Primer numero real que será el multiplicando en la primera operación que hace la función
+     * @param n2Real Segundo numero real que será el multiplicador en la primera operacion que hace la función
+     * @param n3Real Tercer numero real  que sera el multiplicador del resultado del producto entre n1Real y n2Real
 		
-		@throws Exception -Numero mayor de 64 bits en num1Real,num2Real,num3Real o productoReales3
+		@throws Exception -Numero mayor de 64 bits en n1Real,n2Real,n3Real o producto_tres_reales
 		{@link Exception#getMessage()}
      */
 
-	public double producto_Real3(double num1Real,double num2Real,double num3Real)throws Exception {
-		return productoReales3;
+	public double producto_tres_reales(double n1Real,double n2Real,double n3Real)throws Exception {
+		
+		return producto_tres_reales;
 	}//Cierre funcion producto_Real3
 	
 	 /**
 
-     * Método que devuelve el resultado de calcular la potencia de un numero REAL <p>
-     * NOTA:<p>Potencia de un número es el resultado tras la sucesiva multiplicación de un número por sí mismo.
-     * <p>Cualquier número con exponente 1 siempre será el mismo número.
-     * <p>Cualquier número con exponente cero siempre será 1.
-     * <p>Cualquier número con base 10, el exponente significa el numero de ceros del resultado.
+     * Devuelve el resultado de calcular la potencia de un numero REAL <p>
+     * 
+     * NOTA:<p>Se debe introducir el valor numerico al que le aplicamos la potencia y otro valor numerico que es la potencia 
+     * NOTA:<p>valor potencia pot de n1 
+     * 
      * @return Valor REAL que nos devuelve la función o método (potencia)
      * @param base Numero real sobre el cual se calculara su potencia.
      * @param exponente Número entero que significa el número de veces que se multiplica la base.
@@ -118,8 +115,9 @@ public class Producto {
 
      */
 
-	public double potencia_Numero(double base, int exponente) {
-		return potenciaNumero;
+	public double producto_potencia(double base, int exponente) {
+		
+		return producto_potencia;
 
 	}//Cierre función potencia_Numero
 	
