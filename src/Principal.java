@@ -188,6 +188,160 @@ public class Principal {
 			
 			case 3:// Se ha seleccionado en el menu calculadora la operacion
 					// PRODUCTO
+				
+				   /*
+				 * Con el siguiente bucle while, no salimos de el, hasta que se
+				 * escoja una opcion valida del submenu producto o la opcion
+				 * salir
+				 */
+                        boolean salir3 = false;
+			while (!salir3) {
+				// Presentamos el submenu para escoger opciones del producto
+				System.out.println("Operación Multiplicacion a realizar:");
+				System.out.println("1.Producto de dos números reales");
+				System.out.println("2.Producto de dos números enteros");
+				System.out.println("3.Producto de tres números reales");
+				System.out.println("4.Calcular la potencia");
+				System.out.println("5.Volver a calculadora");
+				// Recogemos la opcion que escogemos mediante la variable
+				// subopcion
+				subopcion = sc.nextInt();
+				/*
+				 * Con esa variable y con otro switch case seleccionamos la
+				 * operación a realizar.
+				 */
+				switch (subopcion) {
+				case 1:// Se ha seleccionado en el submenu Producto la
+						// operacion Producto de 2 Reales
+					try {// El bloque try-catch nos captura si introducimos
+							// cadena en vez de número
+						System.out.println("Ingrese el primer número real");
+						double numero1 = sc.nextDouble();
+						System.out.println("Ingrese el segundo número real");
+						double numero2 = sc.nextDouble();
+						/*
+						 * Despues de introducir los valores correctos,
+						 * calculamos el resultado mediante el metodo
+						 * adecuado.
+						 */
+						System.out.println("RESULTADO = "
+								+ p1.producto_dos_reales(numero1, numero2));
+					} catch (Exception e) {
+						salir2 = true;
+						salir=true;/*
+									 * Aqui es donde capturamos la excepcion
+									 * de introducir cadena y salir del
+									 * bucle
+									 */
+						System.out
+								.println("ERROR\n"
+										+ "FIN DEL PROGRAMA");
+						//System.exit(0);
+					}
+					break;
+				case 2:// Se ha seleccionado en el submenu Producto la
+						// operacion Producto de 2 Enteros
+					try {// El bloque try-catch nos captura si introducimos
+							// cadena en vez de número
+						System.out.println("Ingrese el primer número entero");
+						int numero11 = sc.nextInt();
+						System.out.println("Ingrese el segundo número entero");
+						int numero21 = sc.nextInt();
+						/*
+						 * Despues de introducir los valores correctos,
+						 * calculamos el resultado mediante el metodo
+						 * adecuado.
+						 */
+						System.out.println("RESULTADO = "
+								+ p1.producto_dos_enteros(numero11, numero21));
+					} catch (Exception e) {
+						salir = true;
+						salir2 = true;/*
+									 * Aqui es donde capturamos la excepcion
+									 * de introducir cadena y salir del
+									 * bucle
+									 */
+						System.out
+						.println("ERROR\n"
+								+ "FIN DEL PROGRAMA");
+
+					}
+					break;
+				case 3:// Se ha seleccionado en el submenu producto la
+						// operacion producto de 3 Reales
+					try {// El bloque try-catch nos captura si introducimos
+							// cadena en vez de número
+						System.out.println("Ingrese el primer número real");
+						double numero111 = sc.nextDouble();
+						System.out.println("Ingrese el segundo número real");
+						double numero211 = sc.nextDouble();
+						System.out.println("Ingrese el tercer número real");
+						double numero3 = sc.nextDouble();
+						/*
+						 * Despues de introducir los valores correctos,
+						 * calculamos el resultado mediante el metodo
+						 * adecuado.
+						 */
+						System.out.println("RESULTADO = "
+								+ p1.producto_tres_reales(numero111, numero211,
+										numero3));
+					} catch (Exception e) {
+						salir = true;
+						salir2 = true;/*
+									 * Aqui es donde capturamos la excepcion
+									 * de introducir cadena y salir del
+									 * bucle
+									 */
+						System.out
+						.println("ERROR\n"
+								+ "FIN DEL PROGRAMA");
+					}
+					break;
+				case 4:// Se ha seleccionado en el submenu producto la
+						// operacion calcular la potencia
+					try {// El bloque try-catch nos captura si introducimos
+							// cadena en vez de número
+						System.out
+								.println("Introduce el numero real para usarlo de base de la potencia");
+						double base = sc.nextDouble();
+                                                System.out
+								.println("Introduce el numero real para usarlo de exponente de la potencia");
+						int exponente = sc.nextInt();
+
+						/*
+						 * Despues de introducir los valores correctos,
+						 * calculamos el resultado mediante el metodo
+						 * adecuado.
+						 */
+						p1.producto_potencia(base, exponente) ;
+						
+						System.out.println("RESULTADO = "+ p1.producto_potencia(base, exponente));
+					} catch (Exception e) {
+						salir = true;
+						salir2 = true;/*
+									 * Aqui es donde capturamos la excepcion
+									 * de introducir cadena y salir del
+									 * bucle
+									 */
+						System.out
+						.println("ERROR\n"
+								+ "FIN DEL PROGRAMA");
+					}
+					break;
+				case 5:// Se ha seleccionado en el submenu producto la
+						// operacion Salir y volver a calculadora
+					System.out.println("Pulsado volver a calculadora");
+					salir2 = true;
+					break;
+					
+				default://Se ha introducido un valor erroneo en el submenu
+					System.out
+							.println("Opcion incorrecta.Introduce una opción correcta");
+					
+				}//Cierre switch submenu producto
+			}//Cierre while submenu producto
+			break;
+
 
 				
 				
