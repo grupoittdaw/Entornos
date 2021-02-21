@@ -227,7 +227,7 @@ public class Principal {
 						System.out.println("RESULTADO = "
 								+ p1.producto_dos_reales(numero1, numero2));
 					} catch (Exception e) {
-						salir2 = true;
+						salir3 = true;
 						salir=true;/*
 									 * Aqui es donde capturamos la excepcion
 									 * de introducir cadena y salir del
@@ -256,7 +256,7 @@ public class Principal {
 								+ p1.producto_dos_enteros(numero11, numero21));
 					} catch (Exception e) {
 						salir = true;
-						salir2 = true;/*
+						salir3 = true;/*
 									 * Aqui es donde capturamos la excepcion
 									 * de introducir cadena y salir del
 									 * bucle
@@ -287,7 +287,7 @@ public class Principal {
 										numero3));
 					} catch (Exception e) {
 						salir = true;
-						salir2 = true;/*
+						salir3 = true;/*
 									 * Aqui es donde capturamos la excepcion
 									 * de introducir cadena y salir del
 									 * bucle
@@ -319,7 +319,7 @@ public class Principal {
 						System.out.println("RESULTADO = "+ p1.producto_potencia(base, exponente));
 					} catch (Exception e) {
 						salir = true;
-						salir2 = true;/*
+						salir3 = true;/*
 									 * Aqui es donde capturamos la excepcion
 									 * de introducir cadena y salir del
 									 * bucle
@@ -332,7 +332,7 @@ public class Principal {
 				case 5:// Se ha seleccionado en el submenu producto la
 						// operacion Salir y volver a calculadora
 					System.out.println("Pulsado volver a calculadora");
-					salir2 = true;
+					salir3 = true;
 					break;
 					
 				default://Se ha introducido un valor erroneo en el submenu
