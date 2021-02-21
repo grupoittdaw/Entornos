@@ -58,6 +58,8 @@ public class Producto {
      */
 	public double producto_dos_reales(double n1Real, double n2Real) throws Exception {
 		
+		producto_dos_reales=n1Real*n2Real;
+		
 		return producto_dos_reales;
 	}//Cierre función producto_dos_reales
 
@@ -75,6 +77,8 @@ public class Producto {
 		{@link Exception#getMessage()}
      */
 	public int producto_dos_enteros(int n1Entero, int n2Entero)throws Exception {
+		
+		producto_dos_enteros=n1Entero*n2Entero;
 		
 		return producto_dos_enteros;
 	}//Cierre funcion producto_dos_enteros
@@ -94,6 +98,8 @@ public class Producto {
      */
 
 	public double producto_tres_reales(double n1Real,double n2Real,double n3Real)throws Exception {
+		
+		producto_tres_reales=n1Real*n2Real*n3Real;
 		
 		return producto_tres_reales;
 	}//Cierre funcion producto_Real3
@@ -116,6 +122,7 @@ public class Producto {
      */
 
 	public double producto_potencia(double base, int exponente) {
+		producto_potencia=Math.pow(base, exponente);
 		
 		return producto_potencia;
 
