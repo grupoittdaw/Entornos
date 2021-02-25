@@ -66,7 +66,7 @@ public class Principal {
 							 * adecuado.
 							 */
 							System.out.println("RESULTADO = "
-									+ s1.suma_reales(numero1, numero2));
+									+ s1.suma_Real(numero1, numero2));
 						} catch (Exception e) {
 							salir1 = true;
 							salir=true;/*
@@ -94,7 +94,7 @@ public class Principal {
 							 * adecuado.
 							 */
 							System.out.println("RESULTADO = "
-									+ s1.suma_enteros(numero11, numero21));
+									+ s1.suma_Dos_Entero(numero11, numero21));
 						} catch (Exception e) {
 							salir = true;
 							salir1 = true;/*
@@ -124,7 +124,7 @@ public class Principal {
 							 * adecuado.
 							 */
 							System.out.println("RESULTADO = "
-									+ s1.suma_3reales(numero111, numero211,
+									+ s1.suma_Tres_Real(numero111, numero211,
 											numero3));
 						} catch (Exception e) {
 							salir = true;
@@ -150,9 +150,9 @@ public class Principal {
 							 * calculamos el resultado mediante el metodo
 							 * adecuado.
 							 */
-							s1.valor_acumulado(numReal);
+							s1.acumular(numReal);
 							System.out.println("RESULTADO = "
-									+ Math.abs(r1.getAcumulado()));
+									+s1.getAcumulado());
 						} catch (Exception e) {
 							salir = true;
 							salir1 = true;/*
