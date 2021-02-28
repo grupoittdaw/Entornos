@@ -60,7 +60,7 @@ public class Producto {
 		
 		producto_dos_reales=n1Real*n2Real;
 		
-		return producto_dos_reales;
+		return fijarNumero(producto_dos_reales, 3);
 	}//Cierre función producto_dos_reales
 
 	/**
@@ -101,7 +101,7 @@ public class Producto {
 		
 		producto_tres_reales=n1Real*n2Real*n3Real;
 		
-		return producto_tres_reales;
+		return fijarNumero(producto_tres_reales, 3);
 	}//Cierre funcion producto_Real3
 	
 	 /**
@@ -124,8 +124,19 @@ public class Producto {
 	public double producto_potencia(double base, int exponente) {
 		producto_potencia=Math.pow(base, exponente);
 		
-		return producto_potencia;
+		return fijarNumero(producto_potencia, 3);
 
 	}//Cierre función potencia_Numero
+	
+	// Visto que saca demasiados decimales cuando se hace el producto de números altos vamos a reducir el número de decimales que
+	// aparecerán en pantalla redondeando a 3
+	// método para controlar el número de dígitos que añade al redondear
+	public static double fijarNumero(double numero, int digitos) {
+        double resultado;
+        resultado = numero * Math.pow(10, digitos);
+        resultado = Math.round(resultado);
+        resultado = resultado/Math.pow(10, digitos);
+        return resultado;
+    }
 	
 }//Cierre de la clase Producto

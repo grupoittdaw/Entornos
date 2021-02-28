@@ -1,3 +1,4 @@
+package pruebas;
 
 import operaciones.Suma;
 import static org.junit.jupiter.api.Assertions.*;
