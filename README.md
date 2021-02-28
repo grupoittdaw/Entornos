@@ -18,3 +18,5 @@ Creación de ProductoTest.java donde se han hechos las pruebas de la clase produc
 Al hacer las pruebas se encuentra una serie de discordancias en base al número de decimales que aparecen, estos superan en creces la cantidad que una calculadora podría visualizar. 
 Tal y como detalla la actividad 1 procedo a limitar el número de decimales a 3 generando así números redondeados y con menos decimales. 
 El proceso ha sido el mismo, un pull de la master, actualizar mi rama local y crear un nuevo paquete y carpeta de test/pruebas donde introducir todas las pruebas del equipo, finalmente subirlo a la master.
+# Labor Jose
+Creación de SumaTest.java donde se han hecho las pruebas de la clase suma.java elaborada por Diego en la actividad 2. Es necesario ajustar en algún paso la documentación de la clase Suma para que las operaciones unitarias funcionen. Se realizan los cambios que no funcionaban y se soluciona el problema. La parte de actualización del repositorio se realiza sin fallos siguiente los pasos de la anterior actividad.
