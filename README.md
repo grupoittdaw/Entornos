@@ -22,3 +22,6 @@ El proceso ha sido el mismo, un pull de la master, actualizar mi rama local y cr
 Creación de SumaTest.java donde se han hecho las pruebas de la clase suma.java elaborada por Diego en la actividad 2. Es necesario ajustar en algún paso la documentación de la clase Suma para que las operaciones unitarias funcionen. Se realizan los cambios que no funcionaban y se soluciona el problema. La parte de actualización del repositorio se realiza sin fallos siguiente los pasos de la anterior actividad.
 # Labor Angel 
 Se ha creado CocienteTest.java donde se han hecho las pruebas de la clase Cociente elaborada por José María en la Actividad 2, se elaboran las pruebas pertinentes de la clase Cociente y funcionan; una vez terminadas hago primeramente un push para subirlas al repositorio local para a continuación hacer un commit y subirlo a la rama master.
+# Labor Equipo
+Jorge, Angel y Jose se encargan de realizar los test unitarios de la clase resta y comprobar que se adecuan a
+lo que estaba establecido en la documentación creada.
